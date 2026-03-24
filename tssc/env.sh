@@ -41,13 +41,13 @@ export TARGET_BRANCH=${TARGET_BRANCH-""}
 # conforma
 export POLICY_CONFIGURATION=${POLICY_CONFIGURATION-"github.com/redhat-appstudio/tssc-dev-multi-ci//samples/conforma/policies/tssc-v0.7"}
 #internal, assumes jenkins is local openshift
-export REKOR_HOST=${REKOR_HOST-http://rekor-server.tssc-tas.svc}
+export REKOR_HOST=${REKOR_HOST-https://rekor-server-trusted-artifact-signer.apps.rosa.rhtap-services.xmdt.p3.openshiftapps.com}
 export IGNORE_REKOR=${IGNORE_REKOR-false}
 export INFO=${INFO-true}
 export STRICT=${STRICT-true}
 export EFFECTIVE_TIME=${EFFECTIVE_TIME-now}
 export HOMEDIR=${HOMEDIR-$(pwd)}
-export TUF_MIRROR=${TUF_MIRROR-http://tuf.tssc-tas.svc}
+export TUF_MIRROR=${TUF_MIRROR-https://tuf-trusted-artifact-signer.apps.rosa.rhtap-services.xmdt.p3.openshiftapps.com}
 
 export CUSTOM_ROOT_CA=${CUSTOM_ROOT_CA-""}
 
